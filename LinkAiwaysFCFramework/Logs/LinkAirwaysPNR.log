@@ -1,0 +1,12 @@
+2023-09-29 16:32:55 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-09-29 16:32:59 INFO  Browser:75 - Lanching the Application
+2023-09-29 16:33:07 INFO  Browser:81 - Open Application with Chrome Browser
+2023-09-29 16:33:07 ERROR Browser:82 - ChromeBrowser is not open 
+2023-09-29 16:33:16 INFO  SearchTC:23 - Application moved to Searchpage
+2023-09-29 16:33:20 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-09-29 16:33:20 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-09-29 16:33:20 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-09-29 16:33:21 INFO  AddonTC:19 - Application moved to Addonpage
+2023-09-29 16:33:21 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-09-29 16:33:21 INFO  PaymentTC:26 - Given Creditcard details
+2023-09-29 16:33:21 INFO  ThanksTC:19 - Application moved to Thankspage
