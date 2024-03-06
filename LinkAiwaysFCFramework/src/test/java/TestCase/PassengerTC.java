@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import CommonFunction.BrowserLanuch;
@@ -12,8 +13,29 @@ import CommonFunction.ExcelDataProvider;
 import TestPage.BasePage;
 import TestPage.PassengerPage;
 
+
 public class PassengerTC extends BrowserLanuch {
 	Logger logger = Logger.getLogger(PassengerTC.class);
+	/*
+	 * public void ChildDObdate() { Select selectdobchd = new
+	 * Select(Passenger.ChildDOBdate); selectdobchd.selectByIndex(5); }
+	 * 
+	 * public void ChildDObmonth() { Select selectdobchd = new
+	 * Select(Passenger.ChildDOBmonth); selectdobchd.selectByIndex(5); }
+	 * 
+	 * public void ChildDObyear() { Select selectdobchd = new
+	 * Select(Passenger.ChildDOBYear); selectdobchd.selectByIndex(5); }
+	 * 
+	 * public void InfantDObdate() { Select selectdobinfant = new
+	 * Select(Passenger.InfantDOBdate); selectdobinfant.selectByIndex(12); }
+	 * 
+	 * public void InfantDObmonth() { Select selectdobinfant = new
+	 * Select(Passenger.InfantDOBmonth); selectdobinfant.selectByIndex(3); }
+	 * 
+	 * public void InfantDObyear() { Select selectdobinfant = new
+	 * Select(Passenger.InfantDOBYear); selectdobinfant.selectByIndex(2); }
+	 */
+	
 
 	@Test
 	public void Passengercase() throws IOException {

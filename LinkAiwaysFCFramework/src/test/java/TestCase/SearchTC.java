@@ -27,10 +27,12 @@ public class SearchTC extends BrowserLanuch {
 		testcase.info("Searchpage Starting");
 		page.trip();
 		page.departurebutton();
+		System.out.println(excelProvider.getRoutedata("Routes", 1, 1));
 		page.departurecity(excelProvider.getRoutedata("Routes", 1, 1));
 		page.arrivalcity(excelProvider.getRoutedata("Routes", 2, 1));
 		page.monthselect();
-		page.nextdate();
+		page.Dateselect();
+		//page.nextdate(excelProvider.getRoutedata("Routes", 3, 1));
 		page.adultpax();
 		// page.childpax();
 		// page.infantpax();

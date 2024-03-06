@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.v114.browser.Browser;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -48,7 +48,7 @@ public class BrowserLanuch {
 	public static ExtentSparkReporter sparkReporter;
 	public static ExtentTest testcase;
 	public static ExtentHtmlReporter html;
-	Logger logger = Logger.getLogger(Browser.class);
+	Logger logger = Logger.getLogger(BrowserLanuch.class);
 
 	public static Properties loadbrowser() throws IOException {
 
@@ -75,9 +75,12 @@ public class BrowserLanuch {
 		logger.info("Lanching the Application");
 		String Browser = properties.getProperty("Browser");
 		String Url = properties.getProperty("URL");
+		ChromeOptions option = new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
+
 		if (Browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(option);
 			logger.info("Open Application with Chrome Browser");
 			logger.error("ChromeBrowser is not open ");
 		} else if (Browser.equalsIgnoreCase("Firefox")) {

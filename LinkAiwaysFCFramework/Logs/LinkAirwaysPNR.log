@@ -10,3 +10,222 @@
 2023-09-29 16:33:21 INFO  PaymentTC:22 - Application moved to Paymentpage
 2023-09-29 16:33:21 INFO  PaymentTC:26 - Given Creditcard details
 2023-09-29 16:33:21 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 13:34:06 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 13:34:12 INFO  Browser:75 - Lanching the Application
+2023-10-04 13:34:23 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 13:34:23 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 13:34:29 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 13:34:35 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 13:35:05 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-04 13:35:35 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 13:35:36 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 13:36:06 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 13:36:36 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 13:36:36 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 13:37:06 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 13:37:07 INFO  ThanksTC:24 - PNR created
+2023-10-04 13:37:07 ERROR ThanksTC:25 - PNR is not Created
+2023-10-04 13:37:07 INFO  ThanksTC:26 - Booking successfully
+2023-10-04 13:37:07 ERROR ThanksTC:27 - Booking is not done successfully
+2023-10-04 15:47:22 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 15:47:27 INFO  Browser:75 - Lanching the Application
+2023-10-04 15:48:19 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 15:48:19 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 15:48:29 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 15:55:45 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 15:55:48 INFO  Browser:75 - Lanching the Application
+2023-10-04 15:55:57 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 15:55:57 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 15:56:03 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 15:58:02 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 15:58:06 INFO  Browser:75 - Lanching the Application
+2023-10-04 15:58:14 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 15:58:14 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 15:58:20 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 15:58:24 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 15:58:54 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-04 15:59:25 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 15:59:25 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 15:59:29 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 15:59:29 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 15:59:29 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 15:59:29 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 16:04:30 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 16:04:34 INFO  Browser:75 - Lanching the Application
+2023-10-04 16:04:42 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 16:04:42 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 16:04:47 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 16:04:52 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 16:05:15 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 16:05:15 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 16:05:15 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 16:05:15 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 16:05:16 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 16:05:16 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 17:05:20 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 17:05:21 INFO  Browser:75 - Lanching the Application
+2023-10-04 17:06:09 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 17:06:09 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 17:06:17 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 17:07:44 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 17:07:49 INFO  Browser:75 - Lanching the Application
+2023-10-04 17:07:57 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 17:07:57 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 17:08:03 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 17:08:08 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 17:08:38 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-04 17:09:06 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 17:09:06 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 17:09:07 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 17:09:07 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 17:09:07 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 17:09:07 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 17:10:41 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 17:10:45 INFO  Browser:75 - Lanching the Application
+2023-10-04 17:10:54 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 17:10:54 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 17:11:00 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 17:11:01 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 17:11:31 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-04 17:12:02 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 17:12:02 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 17:12:32 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 17:13:02 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 17:13:03 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 17:13:33 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-04 17:13:33 INFO  ThanksTC:24 - PNR created
+2023-10-04 17:13:33 ERROR ThanksTC:25 - PNR is not Created
+2023-10-04 17:13:33 INFO  ThanksTC:26 - Booking successfully
+2023-10-04 17:13:33 ERROR ThanksTC:27 - Booking is not done successfully
+2023-10-04 17:14:10 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 17:14:14 INFO  Browser:75 - Lanching the Application
+2023-10-04 17:14:22 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 17:14:22 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 17:14:29 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 17:45:42 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-04 17:45:44 INFO  Browser:75 - Lanching the Application
+2023-10-04 17:45:49 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-04 17:45:49 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-04 17:45:57 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-04 17:45:58 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-04 17:46:28 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-04 17:46:58 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-04 17:46:58 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-04 17:47:28 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-04 17:47:59 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-04 17:47:59 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-04 17:48:09 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-16 15:35:08 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-16 15:35:15 INFO  Browser:75 - Lanching the Application
+2023-10-16 15:36:15 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-16 15:36:15 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-16 15:36:28 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-16 15:36:30 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-16 15:37:00 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-16 15:37:12 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-16 15:37:13 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-16 15:37:14 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-16 15:37:14 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-16 15:37:14 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-16 15:37:14 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-10-16 15:41:30 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-16 15:41:34 INFO  Browser:75 - Lanching the Application
+2023-10-16 15:41:43 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-16 15:41:43 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-16 15:41:49 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-16 16:06:25 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-16 16:06:29 INFO  Browser:75 - Lanching the Application
+2023-10-16 16:06:38 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-16 16:06:38 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-16 16:06:48 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-16 16:07:36 INFO  SearchTC:40 - Element moving to FlightResultpage
+2023-10-16 16:40:35 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-10-16 16:40:38 INFO  Browser:75 - Lanching the Application
+2023-10-16 16:41:30 INFO  Browser:81 - Open Application with Chrome Browser
+2023-10-16 16:41:30 ERROR Browser:82 - ChromeBrowser is not open 
+2023-10-16 16:41:38 INFO  SearchTC:23 - Application moved to Searchpage
+2023-10-16 16:42:15 INFO  SearchTC:40 - Element moving to FlightResultpage
+2023-10-16 16:42:16 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-10-16 16:42:21 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-10-16 16:42:22 INFO  FlightResultTC:32 - Element moving to Passenger page
+2023-10-16 16:42:22 INFO  PassengerTC:20 - Appilcation moved to Passgener page
+2023-10-16 16:42:23 INFO  PassengerTC:24 - Element give detail for AdultPassgener
+2023-10-16 16:43:01 INFO  PassengerTC:34 - Application moving to AddonPage
+2023-10-16 16:43:01 INFO  AddonTC:19 - Application moved to Addonpage
+2023-10-16 16:43:31 INFO  AddonTC:23 - Application moving to PaymentPage
+2023-10-16 16:43:31 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-10-16 16:43:32 INFO  PaymentTC:26 - Given Creditcard details
+2023-10-16 16:43:38 INFO  PaymentTC:32 - Given Billing details
+2023-10-16 16:43:49 INFO  PaymentTC:40 - Application moving to ThankstPage
+2023-10-16 16:43:49 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-11-06 17:00:01 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-11-06 17:00:03 INFO  Browser:75 - Lanching the Application
+2023-11-06 17:00:11 INFO  Browser:81 - Open Application with Chrome Browser
+2023-11-06 17:00:11 ERROR Browser:82 - ChromeBrowser is not open 
+2023-11-06 17:00:18 INFO  SearchTC:23 - Application moved to Searchpage
+2023-11-06 17:00:48 INFO  SearchTC:40 - Element moving to FlightResultpage
+2023-11-06 17:00:48 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-11-06 17:00:51 INFO  FlightResultTC:30 - Element has selected cabin class 
+2023-11-06 17:00:51 INFO  FlightResultTC:32 - Element moving to Passenger page
+2023-11-06 17:00:51 INFO  PassengerTC:42 - Appilcation moved to Passgener page
+2023-11-06 17:00:51 INFO  PassengerTC:46 - Element give detail for AdultPassgener
+2023-11-06 17:01:00 INFO  PassengerTC:56 - Application moving to AddonPage
+2023-11-06 17:01:00 INFO  AddonTC:19 - Application moved to Addonpage
+2023-11-06 17:01:07 INFO  AddonTC:23 - Application moving to PaymentPage
+2023-11-06 17:01:07 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-11-06 17:01:07 INFO  PaymentTC:26 - Given Creditcard details
+2023-11-06 17:01:14 INFO  PaymentTC:32 - Given Billing details
+2023-11-06 17:01:39 INFO  PaymentTC:40 - Application moving to ThankstPage
+2023-11-06 17:01:39 INFO  ThanksTC:19 - Application moved to Thankspage
+2023-11-06 17:02:12 INFO  ThanksTC:24 - PNR created
+2023-11-06 17:02:12 ERROR ThanksTC:25 - PNR is not Created
+2023-11-06 17:02:12 INFO  ThanksTC:26 - Booking successfully
+2023-11-06 17:02:12 ERROR ThanksTC:27 - Booking is not done successfully
+2023-11-06 17:58:08 INFO  Browser:66 - Automation Script for LinkAirways Project
+2023-11-06 17:58:10 INFO  Browser:75 - Lanching the Application
+2023-11-06 17:58:15 INFO  Browser:81 - Open Application with Chrome Browser
+2023-11-06 17:58:15 ERROR Browser:82 - ChromeBrowser is not open 
+2023-11-06 17:58:28 INFO  SearchTC:23 - Application moved to Searchpage
+2023-11-06 17:59:06 INFO  SearchTC:40 - Element moving to FlightResultpage
+2023-11-06 17:59:06 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2023-11-06 17:59:12 INFO  PassengerTC:42 - Appilcation moved to Passgener page
+2023-11-06 17:59:13 INFO  PassengerTC:46 - Element give detail for AdultPassgener
+2023-11-06 17:59:13 INFO  AddonTC:19 - Application moved to Addonpage
+2023-11-06 17:59:13 INFO  PaymentTC:22 - Application moved to Paymentpage
+2023-11-06 17:59:14 INFO  PaymentTC:26 - Given Creditcard details
+2023-11-06 17:59:14 INFO  ThanksTC:19 - Application moved to Thankspage
+2024-03-06 04:48:06 INFO  Browser:66 - Automation Script for LinkAirways Project
+2024-03-06 04:48:11 INFO  Browser:75 - Lanching the Application
+2024-03-06 05:03:19 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-06 05:03:28 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-06 05:07:03 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-06 05:07:07 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-06 05:08:08 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-06 05:08:12 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-06 05:15:50 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-06 05:15:55 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-06 05:18:37 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-06 05:18:41 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-07 05:21:36 INFO  BrowserLanuch:66 - Automation Script for LinkAirways Project
+2024-03-07 05:21:40 INFO  BrowserLanuch:75 - Lanching the Application
+2024-03-07 05:21:49 INFO  BrowserLanuch:84 - Open Application with Chrome Browser
+2024-03-07 05:21:49 ERROR BrowserLanuch:85 - ChromeBrowser is not open 
+2024-03-07 05:22:01 INFO  SearchTC:23 - Application moved to Searchpage
+2024-03-07 05:23:09 INFO  SearchTC:40 - Element moving to FlightResultpage
+2024-03-07 05:23:09 INFO  FlightResultTC:26 - Element moved to FLight select Page
+2024-03-07 05:23:14 INFO  FlightResultTC:30 - Element has selected cabin class 
+2024-03-07 05:23:15 INFO  FlightResultTC:32 - Element moving to Passenger page
+2024-03-07 05:23:15 INFO  PassengerTC:42 - Appilcation moved to Passgener page
+2024-03-07 05:23:16 INFO  PassengerTC:46 - Element give detail for AdultPassgener
+2024-03-07 05:23:27 INFO  PassengerTC:56 - Application moving to AddonPage
+2024-03-07 05:23:27 INFO  AddonTC:19 - Application moved to Addonpage
+2024-03-07 05:23:34 INFO  AddonTC:23 - Application moving to PaymentPage
+2024-03-07 05:23:34 INFO  PaymentTC:22 - Application moved to Paymentpage
+2024-03-07 05:23:34 INFO  PaymentTC:26 - Given Creditcard details
+2024-03-07 05:23:40 INFO  PaymentTC:32 - Given Billing details
+2024-03-07 05:24:21 INFO  PaymentTC:40 - Application moving to ThankstPage
+2024-03-07 05:24:21 INFO  ThanksTC:19 - Application moved to Thankspage
+2024-03-07 05:25:08 INFO  ThanksTC:24 - PNR created
+2024-03-07 05:25:08 ERROR ThanksTC:25 - PNR is not Created
+2024-03-07 05:25:08 INFO  ThanksTC:26 - Booking successfully
+2024-03-07 05:25:08 ERROR ThanksTC:27 - Booking is not done successfully
