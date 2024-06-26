@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ExcelDataProvider {
 	XSSFWorkbook workbook;
-	static WebDriver driver;
+	
 
 	public ExcelDataProvider() throws IOException {
 
@@ -30,12 +30,14 @@ public class ExcelDataProvider {
 	}
 
 	public String getRoutedata(String sheetname, int row, int column) {
+		
 		XSSFCell route = workbook.getSheet(sheetname).getRow(row).getCell(column);
 		DataFormatter format = new DataFormatter();
 		String routes = format.formatCellValue(route);
 		return routes;
 	}
-
+		
+	
 	public String getPaymentdata(String sheetname, int row, int column) {
 		XSSFCell paycell = workbook.getSheet(sheetname).getRow(row).getCell(column);
 		DataFormatter dataFormatter = new DataFormatter();

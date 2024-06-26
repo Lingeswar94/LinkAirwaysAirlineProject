@@ -18,18 +18,18 @@ import TestPage.BasePage;
 import TestPage.FlightResultPage;
 
 public class FlightResultTC extends BrowserLanuch {
-	Logger logger = Logger.getLogger(FlightResultTC.class);
+	//Logger logger = Logger.getLogger(FlightResultTC.class);
 
 	@Test
 	public void Flightresultcase() {
-		testcase = extentReports.createTest("FlightSelected Page");
-		logger.info("Element moved to FLight select Page");
+	//	testcase = extentReports.createTest("FlightSelected Page");
+	//	logger.info("Element moved to FLight select Page");
 		FlightResultPage flightResult = PageFactory.initElements(driver, FlightResultPage.class);
-		testcase.info("Flightselect for selecting booking class ");
-		flightResult.selectcabinclass();
-		logger.info("Element has selected cabin class ");
-		flightResult.Resultcontinuebutton();
-		logger.info("Element moving to Passenger page");
+	//	testcase.info("Flightselect for selecting booking class ");
+		flightResult.Fareselecting(excelProvider.getRoutedata("Routes", 11, 1));
+	//	logger.info("Element has selected cabin class ");
+		flightResult.FlightContiune();
+	//	logger.info("Element moving to Passenger page");
 
 	}
 }

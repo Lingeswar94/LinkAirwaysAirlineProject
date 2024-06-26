@@ -12,15 +12,15 @@ import TestPage.AddonPage;
 import TestPage.BasePage;
 
 public class AddonTC extends BrowserLanuch {
-	Logger logger = Logger.getLogger(AddonTC.class);
+	//Logger logger = Logger.getLogger(AddonTC.class);
 
 	@Test
 	public void Addoncase() {
-		logger.info("Application moved to Addonpage");
-		testcase=extentReports.createTest("AddonPage");
+	//	logger.info("Application moved to Addonpage");
+	//	testcase=extentReports.createTest("AddonPage");
 		AddonPage addonPage = PageFactory.initElements(driver, AddonPage.class);
 		addonPage.AddonContinuebutton();
-		logger.info("Application moving to PaymentPage");
-		testcase.info("Addon details");
+	//	logger.info("Application moving to PaymentPage");
+	//	testcase.info("Addon details");
 	}
 }

@@ -37,7 +37,7 @@ public class PaymentPage {
 
 	@FindBy(xpath = "//input[@id='ucPersonalDetails1_txtFName']")
 	public static WebElement BillingName;
-
+	
 	@FindBy(xpath = "//input[@id='ucPersonalDetails1_txtLName']")
 	public static WebElement billinglastname;
 
@@ -79,8 +79,14 @@ public class PaymentPage {
 		select.selectByValue("2025");
 	}
 
+	public void Billingdataclear() {
+		BillingName.clear();
+		billinglastname.clear();
+	}
+	
 	public void Billingdetails(String Billingname, String billlastname, String Addressdetails, String citydetails,
 			String Post, String contactno) {
+		
 		BillingName.sendKeys(Billingname);
 		billinglastname.sendKeys(billlastname);
 		Address.sendKeys(Addressdetails);

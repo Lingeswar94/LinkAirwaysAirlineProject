@@ -3,6 +3,7 @@ package TestPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import CommonFunction.ExcelDataProvider;
 
@@ -39,6 +40,8 @@ public class PassengerPage {
 	public static WebElement Passctn;
 	
 	//Child
+	@FindBy(xpath = "//select[@id='ucPassenger1_lstPassenger_TITLE_1_ddlTitle_1']")
+	public static WebElement chTitle;
 	
 	@FindBy (xpath="//input[@id='ucPassenger1_lstPassenger_FIRSTNAME_1_txtFName_1']")
 	public static WebElement Childfirstname;
@@ -59,6 +62,8 @@ public class PassengerPage {
 	public static WebElement ChildResidential;
 	
 	//infant
+	@FindBy(xpath = "//select[@id='ucPassenger1_lstPassenger_TITLE_2_ddlTitle_2']")
+	public static WebElement INTitle;
 	
 	@FindBy (xpath="//input[@id='ucPassenger1_lstPassenger_FIRSTNAME_2_txtFName_2']")
 	public static WebElement Infantfirstname;
@@ -88,7 +93,35 @@ public class PassengerPage {
 		Residential.sendKeys(Res);
 		
 	}
-	
+	public void childPassenger(String chtitle, String fname, String lname, String date, String month, String year,
+			String Res) {
+		Select select = new Select(PassengerPage.chTitle);
+		select.selectByVisibleText(chtitle);
+		Childfirstname.sendKeys(fname);
+		Childlastname.sendKeys(lname);
+		Select select2 = new Select(PassengerPage.ChildDOBdate);
+		select2.selectByVisibleText(date);
+		Select select3 = new Select(PassengerPage.ChildDOBmonth);
+		select3.selectByVisibleText(month);
+		Select select4 = new Select(PassengerPage.ChildDOBYear);
+		select4.selectByVisibleText(year);
+		ChildResidential.sendKeys(Res);
+	}
+
+	public void InfantPax(String intitle, String fname, String lname, String date, String month, String year,
+			String Res) {
+		Select select = new Select(PassengerPage.INTitle);
+		select.selectByVisibleText(intitle);
+		Infantfirstname.sendKeys(fname);
+		Infantlastname.sendKeys(lname);
+		Select select2 = new Select(PassengerPage.InfantDOBdate);
+		select2.selectByVisibleText(date);
+		Select select3 = new Select(PassengerPage.InfantDOBmonth);
+		select3.selectByVisibleText(month);
+		Select select4 = new Select(PassengerPage.InfantDOBYear);
+		select4.selectByVisibleText(year);
+		InfantResidential.sendKeys(Res);
+	}
 	/*
 	 * public void ChildPassengername(String fname,String lname,String mobile,
 	 * String mailid ,String conemail,String Res) { Childfirstname.sendKeys(fname);

@@ -24,15 +24,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
 
 import TestPage.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -44,10 +46,11 @@ public class BrowserLanuch {
 	public static ExcelDataProvider excelProvider;
 	public static ConfigDataProvider config;
 	public static Properties properties;
+	public static ExtentSparkReporter Reporter;
 	public static ExtentReports extentReports;
-	public static ExtentSparkReporter sparkReporter;
+
 	public static ExtentTest testcase;
-	public static ExtentHtmlReporter html;
+	// public static ExtentHtmlReporter html;
 	Logger logger = Logger.getLogger(BrowserLanuch.class);
 
 	public static Properties loadbrowser() throws IOException {
@@ -59,76 +62,83 @@ public class BrowserLanuch {
 
 	}
 
+	@BeforeMethod
+	public void Datafunction() throws IOException {
+		excelProvider = new ExcelDataProvider();
+		Reporter = new ExtentSparkReporter(new String(
+				System.getProperty("user.dir") + "./Reports/FCReports " + Helper.getCurrenttime() + ".html"));
+		Reporter.config().setDocumentTitle("Automation Test Report");
+		Reporter.config().setReportName("FC Normal Flow Project");
+		Reporter.config().setTheme(Theme.DARK);
+		extentReports = new ExtentReports();
+		extentReports.attachReporter(Reporter);
+		extentReports.setSystemInfo("Environment", "QA");
+	}
+
 	@BeforeSuite
 	public void launchBrowser() throws IOException {
 
-		PropertyConfigurator.configure("./Config/Log4j.properties");
-		logger.info("Automation Script for LinkAirways Project");
-		excelProvider = new ExcelDataProvider();
-		extentReports = new ExtentReports();
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(new File(System.getProperty("user.dir") +"\\Reports\\LinkAirways" + Helper.getcurrentdate() +".html"));
-		extentReports.attachReporter(sparkReporter);
-		sparkReporter.config().setReportName("LinkAirways Test Reports");
-		sparkReporter.config().setTheme(Theme.DARK);
-		
 		loadbrowser();
-		logger.info("Lanching the Application");
+
 		String Browser = properties.getProperty("Browser");
 		String Url = properties.getProperty("URL");
-		ChromeOptions option = new ChromeOptions();
+		 ChromeOptions option = new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 
 		if (Browser.equalsIgnoreCase("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.driver.chrome", properties.getProperty("Path"));
 			driver = new ChromeDriver(option);
-			logger.info("Open Application with Chrome Browser");
-			logger.error("ChromeBrowser is not open ");
+
 		} else if (Browser.equalsIgnoreCase("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			logger.info("Open Application with Firefox Browser");
-			logger.error("FireBrowser is not open ");
+
 		} else if (Browser.equalsIgnoreCase("IE")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new InternetExplorerDriver();
-			logger.info("Open Application with IE Browser");
-			logger.error("IEBrowser is not open ");
+
 		} else {
 			System.out.println("Not Supporting");
 		}
 
 		driver.navigate().to(Url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
-	@AfterTest
-	public void teardownmethod(ITestResult result) throws AWTException, IOException {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			// Helper.getscreenshot(driver);
-			testcase.fail("Test Failed",
-					MediaEntityBuilder.createScreenCaptureFromPath(Helper.getscreenshot(driver)).build());
-			logger.error("Testcase Failed and screenshot attached ");
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			testcase.pass("Test Passed",
-					MediaEntityBuilder.createScreenCaptureFromPath(Helper.getscreenshot(driver)).build());
-			logger.info("Testcase Passed and screenshot attached");
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			testcase.skip("Test Skip",
-					MediaEntityBuilder.createScreenCaptureFromPath(Helper.getscreenshot(driver)).build());
-			logger.info("Testcase Skiped and screenshot attached");
-		} else {
-			System.out.println("Not generted");
-		}
+	@BeforeTest
+	public void ExcelProvider() throws IOException {
+		excelProvider = new ExcelDataProvider();
+	}
 
-		extentReports.flush();
+	@AfterMethod
+	public void teardownmethod(ITestResult result) throws AWTException, IOException {
+		if (testcase != null) {
+			if (result.getStatus() == ITestResult.FAILURE) {
+				String screenshotPath = Helper.getscreenshotcapture(driver, result.getTestName());
+				testcase.log(Status.PASS, "Test Passed: Screenshot capture",
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+			} else if (result.getStatus() == ITestResult.SUCCESS) {
+				String screenshotPath = Helper.getscreenshotcapture(driver, result.getTestName());
+				testcase.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+			} else if (result.getStatus() == ITestResult.SKIP) {
+				String screenshotPath = Helper.getskipScreenshot(driver, result.getTestName());
+				testcase.log(Status.SKIP, "Test Skiped: Screenshot capture",MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+			} else {
+				System.out.println("Not generted");
+			}
+			extentReports.flush();
+		}
 	}
 
 	@AfterSuite
 	public void tearDown() {
 		driver.quit();
-
 		logger.info("Closing Application");
 	}
 

@@ -2,292 +2,178 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T05:22:01 IST" name="Suite" finished-at="2024-03-07T05:25:09 IST" duration-ms="187695">
+  <suite started-at="2024-06-26T11:19:22 IST" name="Suite" finished-at="2024-06-26T11:21:40 IST" duration-ms="137562">
     <groups>
     </groups>
-    <test started-at="2024-03-07T05:22:01 IST" name="SearchTest" finished-at="2024-03-07T05:23:09 IST" duration-ms="68048">
+    <test started-at="2024-06-26T11:19:22 IST" name="SearchPageTest" finished-at="2024-06-26T11:20:06 IST" duration-ms="44115">
       <class name="TestCase.SearchTC">
-        <test-method signature="SearchpageTestcase()[pri:0, instance:TestCase.SearchTC@5c671d7f]" started-at="2024-03-07T05:22:01 IST" name="SearchpageTestcase" finished-at="2024-03-07T05:23:09 IST" duration-ms="67894" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.SearchTC@17bffc17]" started-at="2024-06-26T11:19:22 IST" name="ExcelProvider" finished-at="2024-06-26T11:19:23 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.SearchTC@17bffc17]" started-at="2024-06-26T11:19:23 IST" name="Datafunction" finished-at="2024-06-26T11:19:23 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="SearchpageTestcase()[pri:0, instance:TestCase.SearchTC@17bffc17]" started-at="2024-06-26T11:19:23 IST" name="SearchpageTestcase" finished-at="2024-06-26T11:20:06 IST" duration-ms="43083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchpageTestcase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.SearchTC@5c671d7f]" started-at="2024-03-07T05:23:09 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769189331" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.SearchTC@17bffc17]" started-at="2024-06-26T11:20:06 IST" name="teardownmethod" finished-at="2024-06-26T11:20:06 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchpageTestcase status=SUCCESS method=SearchTC.SearchpageTestcase()[pri:0, instance:TestCase.SearchTC@17bffc17] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
       </class> <!-- TestCase.SearchTC -->
-    </test> <!-- SearchTest -->
-    <test started-at="2024-03-07T05:23:09 IST" name="Flightresult" finished-at="2024-03-07T05:23:15 IST" duration-ms="5789">
+    </test> <!-- SearchPageTest -->
+    <test started-at="2024-06-26T11:20:06 IST" name="FlightResultTest" finished-at="2024-06-26T11:20:07 IST" duration-ms="584">
       <class name="TestCase.FlightResultTC">
-        <test-method signature="Flightresultcase()[pri:0, instance:TestCase.FlightResultTC@484970b0]" started-at="2024-03-07T05:23:09 IST" name="Flightresultcase" finished-at="2024-03-07T05:23:15 IST" duration-ms="5720" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.FlightResultTC@446a1e84]" started-at="2024-06-26T11:20:06 IST" name="ExcelProvider" finished-at="2024-06-26T11:20:06 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.FlightResultTC@446a1e84]" started-at="2024-06-26T11:20:06 IST" name="Datafunction" finished-at="2024-06-26T11:20:06 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="Flightresultcase()[pri:0, instance:TestCase.FlightResultTC@446a1e84]" started-at="2024-06-26T11:20:06 IST" name="Flightresultcase" finished-at="2024-06-26T11:20:07 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Flightresultcase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.FlightResultTC@484970b0]" started-at="2024-03-07T05:23:15 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769195236" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.FlightResultTC@446a1e84]" started-at="2024-06-26T11:20:07 IST" name="teardownmethod" finished-at="2024-06-26T11:20:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Flightresultcase status=SUCCESS method=FlightResultTC.Flightresultcase()[pri:0, instance:TestCase.FlightResultTC@446a1e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
       </class> <!-- TestCase.FlightResultTC -->
-    </test> <!-- Flightresult -->
-    <test started-at="2024-03-07T05:23:15 IST" name="Passenger" finished-at="2024-03-07T05:23:27 IST" duration-ms="12330">
+    </test> <!-- FlightResultTest -->
+    <test started-at="2024-06-26T11:20:07 IST" name="PassengerPageTest" finished-at="2024-06-26T11:20:13 IST" duration-ms="6520">
       <class name="TestCase.PassengerTC">
-        <test-method signature="Passengercase()[pri:0, instance:TestCase.PassengerTC@740773a3]" started-at="2024-03-07T05:23:15 IST" name="Passengercase" finished-at="2024-03-07T05:23:27 IST" duration-ms="12284" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.PassengerTC@47caedad]" started-at="2024-06-26T11:20:07 IST" name="ExcelProvider" finished-at="2024-06-26T11:20:07 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.PassengerTC@47caedad]" started-at="2024-06-26T11:20:07 IST" name="Datafunction" finished-at="2024-06-26T11:20:07 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="Passengercase()[pri:0, instance:TestCase.PassengerTC@47caedad]" started-at="2024-06-26T11:20:07 IST" name="Passengercase" finished-at="2024-06-26T11:20:13 IST" duration-ms="6329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Passengercase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.PassengerTC@740773a3]" started-at="2024-03-07T05:23:27 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769207697" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.PassengerTC@47caedad]" started-at="2024-06-26T11:20:13 IST" name="teardownmethod" finished-at="2024-06-26T11:20:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Passengercase status=SUCCESS method=PassengerTC.Passengercase()[pri:0, instance:TestCase.PassengerTC@47caedad] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
       </class> <!-- TestCase.PassengerTC -->
-    </test> <!-- Passenger -->
-    <test started-at="2024-03-07T05:23:27 IST" name="Addon" finished-at="2024-03-07T05:23:34 IST" duration-ms="6783">
+    </test> <!-- PassengerPageTest -->
+    <test started-at="2024-06-26T11:20:13 IST" name="AddonPageTest" finished-at="2024-06-26T11:20:19 IST" duration-ms="5389">
       <class name="TestCase.AddonTC">
-        <test-method signature="Addoncase()[pri:0, instance:TestCase.AddonTC@65b3f4a4]" started-at="2024-03-07T05:23:27 IST" name="Addoncase" finished-at="2024-03-07T05:23:34 IST" duration-ms="6735" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.AddonTC@7eecb5b8]" started-at="2024-06-26T11:20:13 IST" name="ExcelProvider" finished-at="2024-06-26T11:20:14 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.AddonTC@7eecb5b8]" started-at="2024-06-26T11:20:14 IST" name="Datafunction" finished-at="2024-06-26T11:20:14 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="Addoncase()[pri:0, instance:TestCase.AddonTC@7eecb5b8]" started-at="2024-06-26T11:20:14 IST" name="Addoncase" finished-at="2024-06-26T11:20:19 IST" duration-ms="5281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addoncase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.AddonTC@65b3f4a4]" started-at="2024-03-07T05:23:34 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769214568" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.AddonTC@7eecb5b8]" started-at="2024-06-26T11:20:19 IST" name="teardownmethod" finished-at="2024-06-26T11:20:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Addoncase status=SUCCESS method=AddonTC.Addoncase()[pri:0, instance:TestCase.AddonTC@7eecb5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
       </class> <!-- TestCase.AddonTC -->
-    </test> <!-- Addon -->
-    <test started-at="2024-03-07T05:23:34 IST" name="Payment" finished-at="2024-03-07T05:24:21 IST" duration-ms="47137">
+    </test> <!-- AddonPageTest -->
+    <test started-at="2024-06-26T11:20:19 IST" name="PaymentPageTest" finished-at="2024-06-26T11:21:39 IST" duration-ms="80401">
       <class name="TestCase.PaymentTC">
-        <test-method signature="Paymentcase()[pri:0, instance:TestCase.PaymentTC@186f8716]" started-at="2024-03-07T05:23:34 IST" name="Paymentcase" finished-at="2024-03-07T05:24:21 IST" duration-ms="47103" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.PaymentTC@5276d6ee]" started-at="2024-06-26T11:20:19 IST" name="ExcelProvider" finished-at="2024-06-26T11:20:19 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.PaymentTC@5276d6ee]" started-at="2024-06-26T11:20:19 IST" name="Datafunction" finished-at="2024-06-26T11:20:19 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="Paymentcase()[pri:0, instance:TestCase.PaymentTC@5276d6ee]" started-at="2024-06-26T11:20:19 IST" name="Paymentcase" finished-at="2024-06-26T11:21:39 IST" duration-ms="80285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Paymentcase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.PaymentTC@186f8716]" started-at="2024-03-07T05:24:21 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769261730" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.PaymentTC@5276d6ee]" started-at="2024-06-26T11:21:39 IST" name="teardownmethod" finished-at="2024-06-26T11:21:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Paymentcase status=SUCCESS method=PaymentTC.Paymentcase()[pri:0, instance:TestCase.PaymentTC@5276d6ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
       </class> <!-- TestCase.PaymentTC -->
-    </test> <!-- Payment -->
-    <test started-at="2024-03-07T05:24:21 IST" name="Thanks" finished-at="2024-03-07T05:25:09 IST" duration-ms="47145">
+    </test> <!-- PaymentPageTest -->
+    <test started-at="2024-06-26T11:21:39 IST" name="ThanksPageTest" finished-at="2024-06-26T11:21:40 IST" duration-ms="185">
       <class name="TestCase.ThanksTC">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestCase.ThanksTC@574b560f]" started-at="2024-03-07T05:21:36 IST" name="launchBrowser" finished-at="2024-03-07T05:22:01 IST" duration-ms="25196" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:19:16 IST" name="launchBrowser" finished-at="2024-06-26T11:19:22 IST" duration-ms="6188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Thankscase()[pri:0, instance:TestCase.ThanksTC@574b560f]" started-at="2024-03-07T05:24:21 IST" name="Thankscase" finished-at="2024-03-07T05:25:08 IST" duration-ms="47096" status="PASS">
+        <test-method is-config="true" signature="ExcelProvider()[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:21:39 IST" name="ExcelProvider" finished-at="2024-06-26T11:21:39 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelProvider -->
+        <test-method is-config="true" signature="Datafunction()[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:21:39 IST" name="Datafunction" finished-at="2024-06-26T11:21:40 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datafunction -->
+        <test-method signature="Thankscase()[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:21:40 IST" name="Thankscase" finished-at="2024-06-26T11:21:40 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Thankscase -->
-        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.ThanksTC@574b560f]" started-at="2024-03-07T05:25:08 IST" name="teardownmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709769308987" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated teardownmethod.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-at org.testng.TestRunner.afterRun(TestRunner.java:933)
-at org.testng.TestRunner.run(TestRunner.java:624)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:21:40 IST" name="teardownmethod" finished-at="2024-06-26T11:21:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Thankscase status=SUCCESS method=ThanksTC.Thankscase()[pri:0, instance:TestCase.ThanksTC@6a4f1a55] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase.ThanksTC@574b560f]" started-at="2024-03-07T05:25:09 IST" name="tearDown" finished-at="2024-03-07T05:25:09 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase.ThanksTC@6a4f1a55]" started-at="2024-06-26T11:21:40 IST" name="tearDown" finished-at="2024-06-26T11:21:40 IST" duration-ms="623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCase.ThanksTC -->
-    </test> <!-- Thanks -->
+    </test> <!-- ThanksPageTest -->
   </suite> <!-- Suite -->
 </testng-results>

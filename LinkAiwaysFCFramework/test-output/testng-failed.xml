@@ -1,76 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="SearchTest(failed)">
-    <classes>
-      <class name="TestCase.SearchTC">
-        <methods>
-          <include name="SearchpageTestcase"/>
-          <include name="tearDown"/>
-          <include name="teardownmethod"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- TestCase.SearchTC -->
-    </classes>
-  </test> <!-- SearchTest(failed) -->
-  <test thread-count="5" name="Flightresult(failed)">
-    <classes>
-      <class name="TestCase.FlightResultTC">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Flightresultcase"/>
-          <include name="launchBrowser"/>
-          <include name="teardownmethod"/>
-        </methods>
-      </class> <!-- TestCase.FlightResultTC -->
-    </classes>
-  </test> <!-- Flightresult(failed) -->
-  <test thread-count="5" name="Passenger(failed)">
-    <classes>
-      <class name="TestCase.PassengerTC">
-        <methods>
-          <include name="Passengercase"/>
-          <include name="tearDown"/>
-          <include name="teardownmethod"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- TestCase.PassengerTC -->
-    </classes>
-  </test> <!-- Passenger(failed) -->
-  <test thread-count="5" name="Addon(failed)">
+  <test thread-count="5" name="AddonPageTest(failed)">
     <classes>
       <class name="TestCase.AddonTC">
         <methods>
+          <include name="Datafunction"/>
           <include name="tearDown"/>
-          <include name="Addoncase"/>
-          <include name="launchBrowser"/>
+          <include name="ExcelProvider"/>
           <include name="teardownmethod"/>
+          <include name="launchBrowser"/>
+          <include name="Addoncase"/>
         </methods>
       </class> <!-- TestCase.AddonTC -->
     </classes>
-  </test> <!-- Addon(failed) -->
-  <test thread-count="5" name="Payment(failed)">
+  </test> <!-- AddonPageTest(failed) -->
+  <test thread-count="5" name="PaymentPageTest(failed)">
     <classes>
       <class name="TestCase.PaymentTC">
         <methods>
+          <include name="Datafunction"/>
           <include name="tearDown"/>
           <include name="Paymentcase"/>
+          <include name="ExcelProvider"/>
           <include name="teardownmethod"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- TestCase.PaymentTC -->
     </classes>
-  </test> <!-- Payment(failed) -->
-  <test thread-count="5" name="Thanks(failed)">
-    <classes>
-      <class name="TestCase.ThanksTC">
-        <methods>
-          <include name="Thankscase"/>
-          <include name="tearDown"/>
-          <include name="teardownmethod"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- TestCase.ThanksTC -->
-    </classes>
-  </test> <!-- Thanks(failed) -->
+  </test> <!-- PaymentPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

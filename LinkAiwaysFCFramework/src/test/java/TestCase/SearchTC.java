@@ -7,9 +7,11 @@ import CommonFunction.ConfigDataProvider;
 import CommonFunction.ExcelDataProvider;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import TestPage.BasePage;
 import TestPage.SearchPage;
@@ -17,27 +19,25 @@ import TestPage.SearchPage;
 public class SearchTC extends BrowserLanuch {
 	
 	
-	Logger logger=Logger.getLogger(SearchTC.class);
+	//Logger logger=Logger.getLogger(SearchTC.class);
 	@Test
 	public void SearchpageTestcase() throws IOException {
-		logger.info("Application moved to Searchpage");
-		testcase=extentReports.createTest("Login to Appication");
-		ExcelDataProvider excelProvider = new ExcelDataProvider();
+		//logger.info("Application moved to Searchpage");
+		//testcase=extentReports.createTest("Login to Appication");
+		 excelProvider = new ExcelDataProvider();
 		SearchPage page = PageFactory.initElements(driver, SearchPage.class);
-		testcase.info("Searchpage Starting");
-		page.trip();
-		page.departurebutton();
-		System.out.println(excelProvider.getRoutedata("Routes", 1, 1));
-		page.departurecity(excelProvider.getRoutedata("Routes", 1, 1));
-		page.arrivalcity(excelProvider.getRoutedata("Routes", 2, 1));
-		page.monthselect();
-		page.Dateselect();
-		//page.nextdate(excelProvider.getRoutedata("Routes", 3, 1));
-		page.adultpax();
-		// page.childpax();
-		// page.infantpax();
-		page.searchcon();
-		logger.info("Element moving to FlightResultpage");
+		//testcase.info("Searchpage Starting");
+		page.Tripselection(excelProvider.getRoutedata("Routes", 0, 1));
+		page.departureroute(excelProvider.getRoutedata("Routes", 1, 1));
+		page.arrivalroute(excelProvider.getRoutedata("Routes", 2, 1));
+		page.DataSelection(excelProvider.getRoutedata("Routes", 3, 1), excelProvider.getRoutedata("Routes", 4, 1));
+		page.ReturnDateselection(excelProvider.getRoutedata("Routes", 5, 1), excelProvider.getRoutedata("Routes", 6, 1));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+		page.Adultcount(excelProvider.getRoutedata("Routes", 7, 1));
+		page.childpax(excelProvider.getRoutedata("Routes", 8, 1));
+		page.infantpax(excelProvider.getRoutedata("Routes", 9, 1));
+		page.Searchbutton();
+		//logger.info("Element moving to FlightResultpage");
 
 		
 		/*
